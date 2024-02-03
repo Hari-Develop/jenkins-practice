@@ -10,7 +10,7 @@ pipeline {
         DEPLOYING_VERSION = "${TESTING_VERSION}"
     }
     options {
-        timeout {time: 1, unit: "SECONDS"}
+        timeout (time: 1, unit: "SECONDS")
         retry (3)
     }
     stages {
