@@ -17,7 +17,11 @@ pipeline {
         stage('Build') {
             steps {
                 // Add build steps here
-                sh 'echo "Building..."'
+                sh """
+                    echo Building the build envirnoment
+                    sleep 10
+                    """
+                
             }
         }
         stage('Test') {
