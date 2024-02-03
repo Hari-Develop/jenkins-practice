@@ -7,7 +7,7 @@ pipeline {
     environment {
         // using the envirnoment varibales here
         TESTING_VERSION = "1.0.0"
-        DEPLOYING_VERSION = TESTING_VERSION
+        DEPLOYING_VERSION = "TESTING_VERSION"
     }
     stages {
         stage('Build') {
