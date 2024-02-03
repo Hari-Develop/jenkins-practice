@@ -11,6 +11,7 @@ pipeline {
     }
     options {
         timeout {time: 1, unit: "SECONDS"}
+        retry (3)
     }
     stages {
         stage('Build') {
