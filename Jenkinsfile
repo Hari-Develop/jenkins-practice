@@ -31,4 +31,15 @@ pipeline {
         }
         
     }
+    post {
+        always {
+            echo "pipline is running...."
+        }
+        failure {
+            echo "pipline is failure..."
+        }
+        success {
+            echo "pipline is success...party..ledha..pushpa.."
+        }
+    }
 }
