@@ -19,7 +19,6 @@ pipeline {
                 // Add build steps here
                 sh """
                     echo Building the build envirnoment
-                    sleep 10
                     """
                 
             }
