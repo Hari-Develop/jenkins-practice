@@ -34,6 +34,7 @@ pipeline {
                 message "Should we continue?"
                 ok "Yes, we should."
                 submitter "alice,bob"
+            }
             steps {
                 // Add deploy steps here
                 sh 'echo "Deploying...${DEPLOYING_VERSION}"'
